@@ -18,17 +18,19 @@ public class CardTrick {
         Random rand = new Random();
 
         // Fill the magic hand with 7 random cards
-        for (int i = 0; i < magicHand.length; i++) {
-            Card c = new Card();
-            c.setValue(rand.nextInt(13) + 1); // Value from 1 to 13
-            c.setSuit(Card.SUITS[rand.nextInt(4)]); // Random suit
-            magicHand[i] = c;
-        }
+for (int i = 0; i < magicHand.length; i++) {
+    Card c = new Card();
+    c.setValue(rand.nextInt(13) + 1); // Value from 1 to 13
+    c.setSuit(Card.SUITS[rand.nextInt(4)]); // Random suit
+    magicHand[i] = c;
+}
 
-        // Lucky card: 2 of Clubs
-        Card luckyCard = new Card();
-        luckyCard.setValue(2);
-        luckyCard.setSuit("Clubs");
+// Lucky card: 2 of Clubs
+Card luckyCard = new Card();
+luckyCard.setValue(2);
+luckyCard.setSuit("Clubs");
+
+      
 
         // Ask user for card
         Scanner input = new Scanner(System.in);
